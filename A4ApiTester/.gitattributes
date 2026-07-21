@@ -1,20 +1,42 @@
-ComboBox_MotorType:
-TextBox_MotorSpeed
-TextBox_Encoder
-TextBox_ScrewPitch
-TextBox_GearRatio
-CheckBox_UseTouchPanelCtrl
+# 預設所有文字檔自動處理斷行字元
+* text=auto
 
-TextBox_LoadCellCapacity_1
-TextBox_LoadCellCapacity_2
-TextBox_ExtensometerSngle_Encoder
-TextBox_ExtensometerSngle_Pitch
-TextBox_ExtensometerDouble_Encoder
-TextBox_ExtensometerDouble_Pitch
-TextBox_
-TextBox_
+# ========================================
+# ClickOnce 專屬設定 (極度重要)
+# ========================================
+# .deploy 檔案實際上是 DLL/EXE 等二進位檔案加上附檔名，絕對不能被 Git 轉換斷行
+*.deploy binary
 
+# ClickOnce 捷徑參考檔
+*.appref-ms binary
 
+# ========================================
+# 憑證與金鑰 (ClickOnce 簽章用)
+# ========================================
+*.pfx binary
+*.snk binary
+*.cer binary
 
-假設觸控螢幕用 5N L.C. 去校正 -> (AD=0, 0N), (AD=1000, 1N), (AD=2000, 2N) -> AD:Mess = 1000:1
+# ========================================
+# .NET / C# 標準原始碼設定
+# ========================================
+*.cs text diff=csharp
+*.sln text eol=crlf
+*.csproj text merge=union
+*.vbproj text merge=union
+*.config text
+*.resx text
+*.xml text
+*.json text
 
+# ========================================
+# 一般二進位資源檔
+# ========================================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.dll binary
+*.exe binary
+*.pdb binary
