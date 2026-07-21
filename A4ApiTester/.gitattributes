@@ -1,3 +1,20 @@
-*.manifest binary
-*.application binary
-*.deploy binary
+ComboBox_MotorType:
+TextBox_MotorSpeed
+TextBox_Encoder
+TextBox_ScrewPitch
+TextBox_GearRatio
+CheckBox_UseTouchPanelCtrl
+
+TextBox_LoadCellCapacity_1
+TextBox_LoadCellCapacity_2
+TextBox_ExtensometerSngle_Encoder
+TextBox_ExtensometerSngle_Pitch
+TextBox_ExtensometerDouble_Encoder
+TextBox_ExtensometerDouble_Pitch
+TextBox_
+TextBox_
+
+
+
+假設觸控螢幕用 5N L.C. 去校正 -> (AD=0, 0N), (AD=1000, 1N), (AD=2000, 2N) -> AD:Mess = 1000:1
+
